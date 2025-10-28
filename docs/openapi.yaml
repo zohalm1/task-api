@@ -4,12 +4,23 @@ info:
   version: 1.0.0
 servers:
   - url: http://localhost:3000
-    description: Local developmemnt servers
+    description: Local development server
   - url: https://task-api-envo.onrender.com
-    description: Production server on render
+    description: Production server on Render
 tags:
   - name: Tasks
     description: Task-related endpoints
 paths:
   /tasks:
     $ref: paths/tasks.yaml
+components:
+  schemas:
+    Task:
+      $ref: ../components/schemas/Task.yaml
+    ValidationError:
+      $ref: ../components/schemas/ValidationError.yaml
+    NotFoundError:
+      $ref: ../components/schemas/NotFoundError.yaml
+  responses:
+    BadRequest:
+      $ref: ../components/responses/BadRequest.yaml

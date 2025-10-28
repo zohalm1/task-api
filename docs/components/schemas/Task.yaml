@@ -6,7 +6,11 @@ properties:
     example: 1
   title:
     type: string
-    example: Buy groceries
+    example: "Buy groceries"
   completed:
     type: boolean
     example: false
+required:
+  - id
+  - title
+  - completed
