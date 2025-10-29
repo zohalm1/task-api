@@ -16,11 +16,11 @@ paths:
 components:
   schemas:
     Task:
-      $ref: ../components/schemas/Task.yaml
+      $ref: ./components/schemas/Task.yaml
     ValidationError:
-      $ref: ../components/schemas/ValidationError.yaml
+      $ref: ./components/schemas/ValidationError.yaml
     NotFoundError:
-      $ref: ../components/schemas/NotFoundError.yaml
+      $ref: ./components/schemas/NotFoundError.yaml
   responses:
     BadRequest:
-      $ref: ../components/responses/BadRequest.yaml
+      $ref: ./components/responses/BadRequest.yaml
