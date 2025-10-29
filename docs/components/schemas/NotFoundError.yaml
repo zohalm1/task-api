@@ -2,7 +2,4 @@ type: object
 properties:
   error:
     type: string
-    example: "Task not found"
-  message:
-    type: string
-    example: "No task exists with the given ID"
+    example: Task not found
